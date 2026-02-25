@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krushna Keshab Jena — ML Engineer & Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-bracket">[</span>KKJ<span class="logo-bracket">]</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-text="About">About</a></li>
+      <li><a href="#skills" data-text="Skills">Skills</a></li>
+      <li><a href="#experience" data-text="Experience">Experience</a></li>
+      <li><a href="#projects" data-text="Projects">Projects</a></li>
+      <li><a href="#achievements" data-text="Awards">Awards</a></li>
+      <li><a href="#contact" data-text="Contact">
+          <span class="nav-cta">Contact</span>
+        </a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-label">
+        <span class="pulse-dot"></span>
+        Available for Opportunities — 2025
+      </div>
+      <h1 class="hero-name">
+        <span class="line" data-delay="0">Krushna</span>
+        <span class="line italic" data-delay="1">Keshab</span>
+        <span class="line" data-delay="2">Jena</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">// </span>
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor-blink">_</span>
+      </div>
+      <p class="hero-tagline">
+        Building intelligent systems at the intersection of<br>
+        <em>machine learning</em> and <em>backend engineering</em>
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-glow">
+          <span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        <a href="https://github.com/Keshab1257/My_Certifications/blob/main/KRUSHNA_KESHAB_RESUME.docx?raw=true"
+          class="btn btn-ghost" target="_blank" download="Krushna_Keshab_Jena_Resume.docx">Resume</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">8.3</span><span class="stat-label">CGPA</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Internships</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Certifications</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="section-container">
+      <div class="about-layout">
+        <div class="about-visual reveal">
+          <div class="about-img-frame">
+            <img src="https://res.cloudinary.com/dogivijgw/image/upload/v1771996254/hunk_ad9vz8.jpg" alt="About Photo"
+              class="about-img" />
+            <div class="img-corner tl"></div>
+            <div class="img-corner tr"></div>
+            <div class="img-corner bl"></div>
+            <div class="img-corner br"></div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-num">GDG</span>
+            <span class="badge-text">Data Science Lead</span>
+          </div>
+        </div>
+        <div class="about-copy reveal">
+          <div class="section-eyebrow">About Me</div>
+          <h2 class="section-title">Turning raw data into real decisions</h2>
+          <p>I'm an aspiring ML Engineer and Backend Developer pursuing B.Tech in Computer Science at <strong>GIET
+              University, Gunupur</strong>. I thrive at the intersection of data science and software engineering —
+            building models that actually work in production.</p>
+          <p>Through internships at <strong>Pantech Solutions</strong> and <strong>LumenXo Software</strong>, I've
+            executed end-to-end ML workflows and contributed to backend systems with real business impact. I currently
+            lead Data Science initiatives as <strong>GDG Data Science Lead</strong>.</p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-key">Location</span>
+              <span class="meta-val">Baleswar, Odisha, IN</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">Degree</span>
+              <span class="meta-val">B.Tech CSE · 2023–Present</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">CGPA</span>
+              <span class="meta-val">8.3 / 10</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">Focus</span>
+              <span class="meta-val">ML · Backend · Data</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="mailto:princgudu@gmail.com" class="btn btn-glow">Email Me</a>
+            <a href="https://github.com/Keshab1257" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section id="skills">
+    <div class="section-container">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Toolkit</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-sub">A full-stack of capabilities from neural networks to RESTful APIs.</p>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-group reveal" data-tilt>
+          <div class="skill-group-header">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Java</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-pct="88"></div>
+              </div>
+              <span class="pct">88%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>Python</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-pct="85"></div>
+              </div>
+              <span class="pct">85%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>C</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-pct="70"></div>
+              </div>
+              <span class="pct">70%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group reveal" data-tilt>
+          <div class="skill-group-header">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Backend Dev</h3>
+          </div>
+          <div class="skill-tags-grid">
+            <span class="stag">Spring Framework</span>
+            <span class="stag">RESTful APIs</span>
+            <span class="stag">OOP</span>
+            <span class="stag">MVC Architecture</span>
+            <span class="stag">MySQL</span>
+            <span class="stag">Git</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" data-tilt>
+          <div class="skill-group-header">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+              </svg>
+            </div>
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>LSTM / Deep Learning</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-pct="80"></div>
+              </div>
+              <span class="pct">80%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>Regression & Classification</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-pct="85"></div>
+              </div>
+              <span class="pct">85%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>Feature Engineering</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-pct="78"></div>
+              </div>
+              <span class="pct">78%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group reveal" data-tilt>
+          <div class="skill-group-header">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+            </div>
+            <h3>Data Analysis</h3>
+          </div>
+          <div class="skill-tags-grid">
+            <span class="stag">Data Preprocessing</span>
+            <span class="stag">EDA</span>
+            <span class="stag">Time-Series</span>
+            <span class="stag">pandas</span>
+            <span class="stag">Jupyter Notebook</span>
+            <span class="stag">yfinance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section id="experience">
+    <div class="section-container">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Career Path</div>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">May 2025 — Jun 2025</div>
+          <div class="tl-card" data-tilt>
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role">Data Scientist</h3>
+                <p class="tl-company">LumenXo Software Pvt. Ltd. <span>· Baleswar, Odisha</span></p>
+              </div>
+              <span class="tl-badge active">Latest</span>
+            </div>
+            <ul class="tl-points">
+              <li>Worked on real-world datasets to extract actionable insights using Python and ML libraries.</li>
+              <li>Applied data cleaning, exploratory data analysis (EDA), and model training techniques.</li>
+              <li>Improved data quality and reliability for downstream model development workflows.</li>
+            </ul>
+            <div class="tl-tech">
+              <span>Python</span><span>pandas</span><span>EDA</span><span>ML</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">May 2024 — Jun 2024</div>
+          <div class="tl-card" data-tilt>
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role">ML Engineer Intern</h3>
+                <p class="tl-company">Pantech Solutions <span>· Somajiguda, Hyderabad</span></p>
+              </div>
+            </div>
+            <ul class="tl-points">
+              <li>Built a Sales Prediction model using supervised ML techniques to forecast customer demand.</li>
+              <li>Performed data preprocessing, feature selection, and model evaluation.</li>
+              <li>Executed end-to-end ML workflows including data preprocessing, training, and validation.</li>
+              <li>Supported business decision making through structured data analysis.</li>
+            </ul>
+            <div class="tl-tech">
+              <span>Python</span><span>Scikit-learn</span><span>Feature Engineering</span><span>Forecasting</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2023 — Present</div>
+          <div class="tl-card" data-tilt>
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role">Cross-Team Project Contributor</h3>
+                <p class="tl-company">Academic & Peer Projects</p>
+              </div>
+            </div>
+            <ul class="tl-points">
+              <li>Contributed to backend development and data handling across multiple academic projects.</li>
+              <li>Coordinated with team members to define tasks, resolve blockers, and align deliverables.</li>
+              <li>Assisted in debugging, testing, and improving application stability.</li>
+            </ul>
+            <div class="tl-tech">
+              <span>Java</span><span>Spring</span><span>Python</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Work</div>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-sub">Case studies of things I've built and problems I've solved.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" data-tilt>
+          <div class="pc-number">01</div>
+          <div class="pc-visual">
+            <div class="pc-visual-inner">
+              <div class="chart-anim">
+                <svg viewBox="0 0 200 100" fill="none">
+                  <polyline class="chart-line"
+                    points="0,80 20,70 40,50 60,65 80,30 100,45 120,20 140,35 160,15 180,25 200,10" stroke="var(--cyan)"
+                    stroke-width="2" fill="none" />
+                  <polyline
+                    points="0,80 20,70 40,50 60,65 80,30 100,45 120,20 140,35 160,15 180,25 200,10 200,100 0,100"
+                    fill="url(#chartGrad)" opacity="0.15" />
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="var(--cyan)" />
+                      <stop offset="100%" stop-color="transparent" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <span class="pc-tag-visual">LSTM · Neural Network</span>
+            </div>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Stock Market Prediction System</h3>
+            <p class="pc-desc">LSTM-based neural network for stock price forecasting. Collected historical data via
+              Yahoo Finance API, implemented training and validation pipelines to analyze and predict price trends with
+              high accuracy.</p>
+            <div class="pc-tech">
+              <span>Python</span><span>LSTM</span><span>Keras</span><span>TensorFlow</span><span>yfinance</span>
+            </div>
+            <div class="pc-links">
+              <a href="https://github.com/Keshab1257/Stock-Market_LSTM" target="_blank" class="pc-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" data-tilt>
+          <div class="pc-number">02</div>
+          <div class="pc-visual">
+            <div class="pc-visual-inner">
+              <div class="api-anim">
+                <div class="api-line"><span class="api-method get">GET</span> /api/courses</div>
+                <div class="api-line"><span class="api-method post">POST</span> /api/auth/login</div>
+                <div class="api-line"><span class="api-method put">PUT</span> /api/users/{id}</div>
+                <div class="api-line"><span class="api-method del">DEL</span> /api/courses/{id}</div>
+              </div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">KYNECTRA — Learning Management System</h3>
+            <p class="pc-desc">Advanced LMS built with Spring Framework. Designed RESTful APIs for user management,
+              course handling, and authentication. Applied OOP principles and layered architecture for scalability and
+              long-term maintainability.</p>
+            <div class="pc-tech">
+              <span>Java</span><span>Spring Framework</span><span>REST APIs</span><span>MySQL</span><span>MVC</span>
+            </div>
+            <div class="pc-links">
+              <a href="https://github.com/Keshab1257/KYNECTRA_The_Advanced_LMS" target="_blank" class="pc-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" data-tilt>
+          <div class="pc-number">03</div>
+          <div class="pc-visual">
+            <div class="pc-visual-inner">
+              <div class="bars-anim">
+                <div class="bar-vis" style="height:60%"></div>
+                <div class="bar-vis" style="height:85%"></div>
+                <div class="bar-vis" style="height:45%"></div>
+                <div class="bar-vis" style="height:95%"></div>
+                <div class="bar-vis" style="height:70%"></div>
+                <div class="bar-vis" style="height:55%"></div>
+                <div class="bar-vis" style="height:80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Sales Prediction ML Model</h3>
+            <p class="pc-desc">Supervised machine learning model built at Pantech Solutions to forecast customer demand.
+              Full end-to-end pipeline: data collection, preprocessing, feature engineering, model training, and
+              business-ready insights.</p>
+            <div class="pc-tech">
+              <span>Python</span><span>Scikit-learn</span><span>pandas</span><span>Regression</span><span>Feature
+                Eng.</span>
+            </div>
+            <div class="pc-links">
+              <a href="https://github.com/Keshab1257/Sales_prediction_log_reg" target="_blank" class="pc-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ACHIEVEMENTS ══ -->
+  <section id="achievements">
+    <div class="section-container">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Recognition</div>
+        <h2 class="section-title">Leadership & Certifications</h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card featured reveal" data-tilt>
+          <div class="ach-glow"></div>
+          <div class="ach-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <div class="ach-body">
+            <span class="ach-org">Google Developer Group</span>
+            <h4>Data Science Lead</h4>
+            <p>Oct 2025 – Present · Leading DS initiatives and mentoring peers across the GDG chapter.</p>
+          </div>
+          <span class="ach-year current">Active</span>
+        </div>
+        <div class="ach-card reveal" data-tilt>
+          <div class="ach-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <polyline points="8 21 12 17 16 21" />
+            </svg>
+          </div>
+          <div class="ach-body">
+            <span class="ach-org">NPTEL · IIT Kharagpur</span>
+            <h4>Programming in Java</h4>
+          </div>
+          <span class="ach-year">2025</span>
+        </div>
+        <div class="ach-card reveal" data-tilt>
+          <div class="ach-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 20h9" />
+              <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+            </svg>
+          </div>
+          <div class="ach-body">
+            <span class="ach-org">NPTEL · IIT Madras</span>
+            <h4>DSA using Python</h4>
+          </div>
+          <span class="ach-year">2024</span>
+        </div>
+        <div class="ach-card reveal" data-tilt>
+          <div class="ach-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+            </svg>
+          </div>
+          <div class="ach-body">
+            <span class="ach-org">Spoken Tutorial · IIT Bombay</span>
+            <h4>Java Training Certificate</h4>
+          </div>
+          <span class="ach-year">2024</span>
+        </div>
+        <div class="ach-card reveal" data-tilt>
+          <div class="ach-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="ach-body">
+            <span class="ach-org">NPTEL · IIT Kharagpur</span>
+            <h4>Industry 4.0 & IIoT</h4>
+          </div>
+          <span class="ach-year">2025</span>
+        </div>
+        <div class="ach-card edu reveal" data-tilt>
+          <div class="ach-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+          </div>
+          <div class="ach-body">
+            <span class="ach-org">GIET University, Gunupur</span>
+            <h4>B.Tech Computer Science</h4>
+            <p>CGPA: 8.3/10 · 2023–Present</p>
+          </div>
+          <span class="ach-year">Ongoing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="contact-layout">
+        <div class="contact-left reveal">
+          <div class="section-eyebrow">Get In Touch</div>
+          <h2 class="section-title">Let's build<br><em>something great</em></h2>
+          <p>Whether you're hiring, collaborating, or just want to talk tech — I'm always open to meaningful
+            conversations.</p>
+          <div class="contact-socials">
+            <a href="mailto:princgudu@gmail.com" class="social-link" aria-label="Email">
+              <div class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <span class="social-label">Email</span>
+                <span class="social-val">princgudu@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/krushna-keshab-jena-2602862a3/" target="_blank" class="social-link"
+              aria-label="LinkedIn">
+              <div class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div>
+                <span class="social-label">LinkedIn</span>
+                <span class="social-val">krushna-keshab-jena</span>
+              </div>
+            </a>
+            <a href="https://github.com/Keshab1257" target="_blank" class="social-link" aria-label="GitHub">
+              <div class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </div>
+              <div>
+                <span class="social-label">GitHub</span>
+                <span class="social-val">Keshab1257</span>
+              </div>
+            </a>
+            <a href="tel:+918249381885" class="social-link" aria-label="Phone">
+              <div class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68 2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 6.22a16 16 0 006.86 6.86l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <span class="social-label">Phone</span>
+                <span class="social-val">+91 8249381885</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-name">Name</label>
+                <input type="text" id="f-name" name="name" placeholder="John Doe" autocomplete="off" />
+                <span class="field-error" id="err-name"></span>
+              </div>
+              <div class="form-field">
+                <label for="f-email">Email</label>
+                <input type="email" id="f-email" name="email" placeholder="john@example.com" autocomplete="off" />
+                <span class="field-error" id="err-email"></span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="f-subject">Subject</label>
+              <input type="text" id="f-subject" name="subject" placeholder="Job Opportunity / Collaboration"
+                autocomplete="off" />
+              <span class="field-error" id="err-subject"></span>
+            </div>
+            <div class="form-field">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="5"
+                placeholder="Tell me about your project or role..."></textarea>
+              <span class="field-error" id="err-message"></span>
+            </div>
+            <div class="form-footer">
+              <span class="form-status" id="formStatus"></span>
+              <button type="submit" class="btn btn-glow btn-submit" id="submitBtn">
+                <span id="btnText">Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo"><span class="logo-bracket">[</span>KKJ<span class="logo-bracket">]</span></span>
+      <p>Designed & coded with precision by <strong>Krushna Keshab Jena</strong> · 2025</p>
+      <div class="footer-links">
+        <a href="https://github.com/Keshab1257" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/krushna-keshab-jena-2602862a3/" target="_blank">LinkedIn</a>
+        <a href="mailto:princgudu@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
