@@ -324,11 +324,24 @@ section { padding: 7rem var(--pad); }
   max-width: var(--max-w); margin: 0 auto;
 }
 
-.about-visual { position: relative; }
+.about-visual {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+}
 .about-img-frame {
   position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
   border-radius: var(--radius);
   overflow: hidden;
+}
+.about-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
 }
 .about-img-placeholder {
   aspect-ratio: 4/5;
@@ -794,7 +807,7 @@ footer strong { color: var(--text-dim); }
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .about-layout { grid-template-columns: 1fr; gap: 3rem; }
-  .about-visual { max-width: 380px; }
+  .about-visual { max-width: 380px; margin: 0 auto; }
   .projects-grid { gap: 1.5rem; }
   .project-card { grid-template-columns: 220px 1fr; }
   .ach-grid { grid-template-columns: repeat(2, 1fr); }
@@ -826,6 +839,8 @@ footer strong { color: var(--text-dim); }
   .ach-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; text-align: center; }
+  .about-visual { max-width: 320px; margin: 0 auto; }
+  .about-img { object-position: center top; }
   .about-badge { right: 0; bottom: -1rem; }
 }
 
